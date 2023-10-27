@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="q8t-Oe-QsE" customClass="MainNewBannerCollectionCell" customModule="MMA_News" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="220"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="390" height="220"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lxn-kb-eNO" userLabel="MainView">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="220"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WtM-Wb-GnM">
+                                <rect key="frame" x="0.0" y="0.0" width="390" height="220"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qN0-Ka-uFj" userLabel="BlurView">
+                                <rect key="frame" x="190" y="0.0" width="200" height="220"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="90b-kI-djC" userLabel="BlurStackView">
+                                        <rect key="frame" x="16" y="16" width="168" height="188"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Sv-Nd-856">
+                                                <rect key="frame" x="0.0" y="0.0" width="168" height="90"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BZT-4g-JZR">
+                                                <rect key="frame" x="0.0" y="100" width="168" height="16"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="16" id="ALA-yM-FVv"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Zo-2K-EQc">
+                                                <rect key="frame" x="0.0" y="126" width="168" height="16"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="16" id="tAl-TI-0d2"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jD5-I0-g5C">
+                                                <rect key="frame" x="0.0" y="152" width="168" height="16"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="16" id="6u2-Er-jse"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C9K-E1-QUa" userLabel="ProgressView">
+                                                <rect key="frame" x="0.0" y="178" width="168" height="10"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="10" id="lbe-VS-XQ6"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" name="blueDay700"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="90b-kI-djC" secondAttribute="trailing" constant="16" id="ZSS-c4-0Bm"/>
+                                    <constraint firstAttribute="bottom" secondItem="90b-kI-djC" secondAttribute="bottom" constant="16" id="eEF-Yv-GmP"/>
+                                    <constraint firstAttribute="width" constant="200" id="fE4-vD-Cqb"/>
+                                    <constraint firstItem="90b-kI-djC" firstAttribute="leading" secondItem="qN0-Ka-uFj" secondAttribute="leading" constant="16" id="tUf-zY-M2k"/>
+                                    <constraint firstItem="90b-kI-djC" firstAttribute="top" secondItem="qN0-Ka-uFj" secondAttribute="top" constant="16" id="z3v-ba-C1d"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" name="background"/>
+                        <constraints>
+                            <constraint firstItem="WtM-Wb-GnM" firstAttribute="top" secondItem="lxn-kb-eNO" secondAttribute="top" id="0OM-dK-ICE"/>
+                            <constraint firstAttribute="trailing" secondItem="WtM-Wb-GnM" secondAttribute="trailing" id="PK7-FZ-Rty"/>
+                            <constraint firstAttribute="trailing" secondItem="qN0-Ka-uFj" secondAttribute="trailing" id="Plf-uR-nFS"/>
+                            <constraint firstAttribute="bottom" secondItem="WtM-Wb-GnM" secondAttribute="bottom" id="Scf-7r-yQ4"/>
+                            <constraint firstAttribute="bottom" secondItem="qN0-Ka-uFj" secondAttribute="bottom" id="bcg-B3-PMx"/>
+                            <constraint firstItem="WtM-Wb-GnM" firstAttribute="leading" secondItem="lxn-kb-eNO" secondAttribute="leading" id="lNi-bu-ptx"/>
+                            <constraint firstItem="qN0-Ka-uFj" firstAttribute="top" secondItem="lxn-kb-eNO" secondAttribute="top" id="psF-ML-fVu"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="OtO-6Y-Eqv"/>
+            <constraints>
+                <constraint firstItem="lxn-kb-eNO" firstAttribute="top" secondItem="q8t-Oe-QsE" secondAttribute="top" id="3ci-hz-UFK"/>
+                <constraint firstAttribute="bottom" secondItem="lxn-kb-eNO" secondAttribute="bottom" id="Cdn-Uv-wyP"/>
+                <constraint firstItem="lxn-kb-eNO" firstAttribute="leading" secondItem="q8t-Oe-QsE" secondAttribute="leading" id="uFZ-3k-DuR"/>
+                <constraint firstAttribute="trailing" secondItem="lxn-kb-eNO" secondAttribute="trailing" id="uO7-vD-3Kz"/>
+            </constraints>
+            <size key="customSize" width="250" height="176"/>
+            <connections>
+                <outlet property="clockImageTitleViewView" destination="jD5-I0-g5C" id="x7Z-3Q-lXQ"/>
+                <outlet property="dateImageTitleViewView" destination="1Zo-2K-EQc" id="Zgm-fW-IfB"/>
+                <outlet property="mapImageTitleViewView" destination="BZT-4g-JZR" id="gUT-O9-GQD"/>
+                <outlet property="newsImageView" destination="WtM-Wb-GnM" id="GZ4-CF-uQ2"/>
+                <outlet property="progressView" destination="C9K-E1-QUa" id="ygn-jv-KDt"/>
+                <outlet property="titleLabel" destination="6Sv-Nd-856" id="ffq-zw-7e8"/>
+            </connections>
+            <point key="canvasLocation" x="282.60869565217394" y="185.49107142857142"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="background">
+            <color red="0.14100000262260437" green="0.18400000035762787" blue="0.41999998688697815" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="blueDay700">
+            <color red="0.14100000262260437" green="0.18400000035762787" blue="0.41999998688697815" alpha="0.69999998807907104" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

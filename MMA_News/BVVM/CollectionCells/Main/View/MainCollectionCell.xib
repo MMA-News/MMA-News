@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="q8t-Oe-QsE" customClass="MainCollectionCell" customModule="POP_MMA" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="362" height="226"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="362" height="226"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pXS-uE-x8y" userLabel="ContainerView">
+                        <rect key="frame" x="0.0" y="0.0" width="362" height="226"/>
+                        <color key="backgroundColor" name="background"/>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="OtO-6Y-Eqv"/>
+            <color key="backgroundColor" name="AccentColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="pXS-uE-x8y" secondAttribute="bottom" id="KCs-Zi-ioF"/>
+                <constraint firstItem="pXS-uE-x8y" firstAttribute="top" secondItem="q8t-Oe-QsE" secondAttribute="top" id="Ysh-vB-4Lk"/>
+                <constraint firstAttribute="trailing" secondItem="pXS-uE-x8y" secondAttribute="trailing" id="eUt-W9-lbs"/>
+                <constraint firstItem="pXS-uE-x8y" firstAttribute="leading" secondItem="q8t-Oe-QsE" secondAttribute="leading" id="mA8-7Q-NdO"/>
+            </constraints>
+            <size key="customSize" width="362" height="226"/>
+            <connections>
+                <outlet property="containerView" destination="pXS-uE-x8y" id="vz1-sV-QKq"/>
+            </connections>
+            <point key="canvasLocation" x="363.768115942029" y="202.90178571428569"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="background">
+            <color red="0.2669999897480011" green="0.2669999897480011" blue="0.2669999897480011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

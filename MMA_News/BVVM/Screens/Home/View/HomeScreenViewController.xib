@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeScreenViewController" customModule="POP_MMA" customModuleProvider="target">
+            <connections>
+                <outlet property="containerCollectionView" destination="LMs-84-DzN" id="ZIp-Lv-Sxp"/>
+                <outlet property="view" destination="kns-3F-tW8" id="Q7V-qO-UgP"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="kns-3F-tW8">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ERt-Ta-FYu" userLabel="MainView">
+                    <rect key="frame" x="0.0" y="48" width="414" height="814"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LMs-84-DzN" userLabel="CollectionViewContainerView">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="814"/>
+                            <subviews>
+                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="VFa-Qi-kTv">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="814"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="cZa-ZK-qb0">
+                                        <size key="itemSize" width="128" height="128"/>
+                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </collectionViewFlowLayout>
+                                </collectionView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="VFa-Qi-kTv" secondAttribute="bottom" id="Bvm-AS-0Ky"/>
+                                <constraint firstAttribute="trailing" secondItem="VFa-Qi-kTv" secondAttribute="trailing" id="Tvl-40-nTt"/>
+                                <constraint firstItem="VFa-Qi-kTv" firstAttribute="leading" secondItem="LMs-84-DzN" secondAttribute="leading" id="jpo-Tg-QcD"/>
+                                <constraint firstItem="VFa-Qi-kTv" firstAttribute="top" secondItem="LMs-84-DzN" secondAttribute="top" id="ldf-4S-ivY"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="LMs-84-DzN" secondAttribute="trailing" id="021-6I-4dj"/>
+                        <constraint firstItem="LMs-84-DzN" firstAttribute="top" secondItem="ERt-Ta-FYu" secondAttribute="top" id="Wni-cC-7cH"/>
+                        <constraint firstItem="LMs-84-DzN" firstAttribute="leading" secondItem="ERt-Ta-FYu" secondAttribute="leading" id="Wuq-hN-UV0"/>
+                        <constraint firstAttribute="bottom" secondItem="LMs-84-DzN" secondAttribute="bottom" id="dT5-Ep-gWa"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Pmi-a7-4oC"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="ERt-Ta-FYu" firstAttribute="leading" secondItem="Pmi-a7-4oC" secondAttribute="leading" id="2Xm-tE-47h"/>
+                <constraint firstItem="Pmi-a7-4oC" firstAttribute="bottom" secondItem="ERt-Ta-FYu" secondAttribute="bottom" id="41X-Om-nuV"/>
+                <constraint firstItem="ERt-Ta-FYu" firstAttribute="top" secondItem="Pmi-a7-4oC" secondAttribute="top" id="VLs-jx-95R"/>
+                <constraint firstItem="ERt-Ta-FYu" firstAttribute="trailing" secondItem="Pmi-a7-4oC" secondAttribute="trailing" id="bE6-qb-M1e"/>
+            </constraints>
+            <point key="canvasLocation" x="-730.43478260869574" y="26.785714285714285"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

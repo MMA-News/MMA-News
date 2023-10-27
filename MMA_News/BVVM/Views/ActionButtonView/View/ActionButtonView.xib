@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ActionButtonViewController" customModule="POP_MMA" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="kns-3F-tW8" customClass="ActionButtonView" customModule="POP_MMA" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="470" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zhd-1E-gSt" userLabel="ButtonView">
+                    <rect key="frame" x="0.0" y="0.0" width="470" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ux-eq-WWV">
+                            <rect key="frame" x="0.0" y="0.0" width="470" height="44"/>
+                            <color key="backgroundColor" name="yellow900"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Купить билеты">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                            <connections>
+                                <action selector="actionButtonWithButton:" destination="kns-3F-tW8" eventType="touchUpInside" id="TBE-5Z-jat"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="8Ux-eq-WWV" secondAttribute="trailing" id="0Ma-Ix-KXZ"/>
+                        <constraint firstAttribute="bottom" secondItem="8Ux-eq-WWV" secondAttribute="bottom" id="QkM-eE-YhQ"/>
+                        <constraint firstItem="8Ux-eq-WWV" firstAttribute="leading" secondItem="Zhd-1E-gSt" secondAttribute="leading" id="YYS-OZ-VV3"/>
+                        <constraint firstItem="8Ux-eq-WWV" firstAttribute="top" secondItem="Zhd-1E-gSt" secondAttribute="top" id="xSO-ua-u7T"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Pmi-a7-4oC"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Zhd-1E-gSt" secondAttribute="trailing" id="O35-wB-BUk"/>
+                <constraint firstItem="Zhd-1E-gSt" firstAttribute="top" secondItem="kns-3F-tW8" secondAttribute="top" id="Qj5-ii-5Ej"/>
+                <constraint firstAttribute="bottom" secondItem="Zhd-1E-gSt" secondAttribute="bottom" id="T2j-JG-1qT"/>
+                <constraint firstItem="Zhd-1E-gSt" firstAttribute="leading" secondItem="kns-3F-tW8" secondAttribute="leading" id="yAg-yd-G3m"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="button" destination="8Ux-eq-WWV" id="vi8-7I-B99"/>
+            </connections>
+            <point key="canvasLocation" x="-689.85507246376812" y="-204.91071428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="yellow900">
+            <color red="0.89800000190734863" green="0.61599999666213989" blue="0.071000002324581146" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

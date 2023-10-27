@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainTabBarScreenViewController" customModule="MMA_News" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="Wh4-PZ-ID6" id="8Vi-Xw-5ZI"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tabBarController id="062-qj-t3U">
+            <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="Wh4-PZ-ID6">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <color key="backgroundColor" name="mainBlue"/>
+                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <color key="selectedImageTintColor" name="mainBlue"/>
+            </tabBar>
+            <viewControllers>
+                <viewController id="WEc-v7-CZF">
+                    <view key="view" contentMode="scaleToFill" id="zVd-Qr-G9g">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="PP0-gv-Nwv"/>
+                        <color key="backgroundColor" name="mainBlue"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="QHx-0F-0pF"/>
+                </viewController>
+                <viewController id="aGm-79-kzK">
+                    <view key="view" contentMode="scaleToFill" id="TP5-wC-A5r">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Ben-ZV-5Om"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="OHl-Fd-oiw"/>
+                </viewController>
+            </viewControllers>
+            <point key="canvasLocation" x="-946" y="673"/>
+        </tabBarController>
+    </objects>
+    <resources>
+        <namedColor name="mainBlue">
+            <color red="0.074509803921568626" green="0.12156862745098039" blue="0.37647058823529411" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

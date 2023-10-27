@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TournamentsScreenViewController" customModule="POP_MMA" customModuleProvider="target">
+            <connections>
+                <outlet property="containerCollectionView" destination="9ij-Ma-ZfY" id="We1-0M-D0R"/>
+                <outlet property="view" destination="EQc-L6-1nT" id="ewh-Ns-lip"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="EQc-L6-1nT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="opR-vV-PVP" userLabel="MainView">
+                    <rect key="frame" x="0.0" y="48" width="414" height="814"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9ij-Ma-ZfY" userLabel="CollectionViewContainerView">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="814"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="9ij-Ma-ZfY" secondAttribute="bottom" id="GE6-Fq-gs5"/>
+                        <constraint firstAttribute="trailing" secondItem="9ij-Ma-ZfY" secondAttribute="trailing" id="RpN-SN-Q4k"/>
+                        <constraint firstItem="9ij-Ma-ZfY" firstAttribute="top" secondItem="opR-vV-PVP" secondAttribute="top" id="bT4-X5-nNd"/>
+                        <constraint firstItem="9ij-Ma-ZfY" firstAttribute="leading" secondItem="opR-vV-PVP" secondAttribute="leading" id="tFw-0U-MbE"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="iFs-lU-jPg"/>
+            <color key="backgroundColor" name="background"/>
+            <constraints>
+                <constraint firstItem="opR-vV-PVP" firstAttribute="top" secondItem="iFs-lU-jPg" secondAttribute="top" id="46z-Ga-fwF"/>
+                <constraint firstItem="opR-vV-PVP" firstAttribute="trailing" secondItem="iFs-lU-jPg" secondAttribute="trailing" id="LGH-LU-ZE9"/>
+                <constraint firstItem="iFs-lU-jPg" firstAttribute="bottom" secondItem="opR-vV-PVP" secondAttribute="bottom" id="Lsb-g7-Mj6"/>
+                <constraint firstItem="opR-vV-PVP" firstAttribute="leading" secondItem="iFs-lU-jPg" secondAttribute="leading" id="rIu-B0-eZh"/>
+            </constraints>
+            <point key="canvasLocation" x="-730" y="27"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="background">
+            <color red="0.2669999897480011" green="0.2669999897480011" blue="0.2669999897480011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

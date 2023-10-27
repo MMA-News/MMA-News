@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "mans.pdf",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

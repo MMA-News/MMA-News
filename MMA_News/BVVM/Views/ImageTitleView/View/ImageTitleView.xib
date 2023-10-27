@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ImageTitleViewViewController" customModule="POP_MMA" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="kns-3F-tW8" customClass="ImageTitleView" customModule="POP_MMA" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="107" height="36"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="RBq-is-tEA" userLabel="MainStackView">
+                    <rect key="frame" x="0.0" y="0.0" width="107" height="36"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="map" translatesAutoresizingMaskIntoConstraints="NO" id="1hD-a2-qSj">
+                            <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="1hD-a2-qSj" secondAttribute="height" id="FZs-ht-ZsF"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c4h-i2-yel">
+                            <rect key="frame" x="42" y="0.0" width="65" height="36"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                            <color key="textColor" name="grayNight700"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="Pmi-a7-4oC"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="RBq-is-tEA" secondAttribute="bottom" id="Srg-7h-8iS"/>
+                <constraint firstAttribute="trailing" secondItem="RBq-is-tEA" secondAttribute="trailing" id="VNl-2V-f52"/>
+                <constraint firstItem="RBq-is-tEA" firstAttribute="leading" secondItem="kns-3F-tW8" secondAttribute="leading" id="ji4-ht-xzt"/>
+                <constraint firstItem="RBq-is-tEA" firstAttribute="top" secondItem="kns-3F-tW8" secondAttribute="top" id="m79-lh-js9"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="iconImageView" destination="1hD-a2-qSj" id="Eqa-jf-sMq"/>
+                <outlet property="textLabel" destination="c4h-i2-yel" id="j0p-pS-95K"/>
+            </connections>
+            <point key="canvasLocation" x="-658.69565217391312" y="-196.20535714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="map" width="11" height="14"/>
+        <namedColor name="grayNight700">
+            <color red="1" green="1" blue="1" alpha="0.69999998807907104" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
