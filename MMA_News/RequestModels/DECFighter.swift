@@ -19,7 +19,7 @@ struct DECFighter {
         case city
         case fights
         case club
-        case photoURL
+        case photoURL = "photo"
 	}
 }
 extension DECFighter: Codable {

@@ -10,6 +10,9 @@ import Foundation
 
 struct GetRequestsFirebaseService {
     
+    private let fightersCollection = "new_fighters" //Fighters
+    private let tournametColection = "new_tournaments" // tournaments
+    
     private let firestoreService: FirestoreService
     
     init(
@@ -20,9 +23,9 @@ struct GetRequestsFirebaseService {
     
     private let reference = Firestore.firestore()
     
-    func getFighters(completion: @escaping ClosureResult<[DECFighter]>) {
+func getFighters(completion: @escaping ClosureResult<[DECFighter]>) {
         var getFightersRequestData = GetFightersRequestData()
-        getFightersRequestData.collectionReference = reference.collection("Fighters")
+        getFightersRequestData.collectionReference = reference.collection(fightersCollection)
         
         self.firestoreService.get(
             requestData: getFightersRequestData,
@@ -52,7 +55,7 @@ struct GetRequestsFirebaseService {
     
     func getTournaments(completion: @escaping ClosureResult<[DECTournament]>) {
         var getTournamentsRequestData = GetTournamentsRequestData()
-        getTournamentsRequestData.collectionReference = reference.collection("tournaments")
+        getTournamentsRequestData.collectionReference = reference.collection(tournametColection)
         
         self.firestoreService.get(
             requestData: getTournamentsRequestData,
