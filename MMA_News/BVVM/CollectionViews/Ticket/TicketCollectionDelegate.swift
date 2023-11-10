@@ -24,8 +24,10 @@ extension TicketCollectionDelegate: UICollectionViewDelegateFlowLayout {
         layout collectionViewLayout: UICollectionViewLayout,
         sizeForItemAt indexPath: IndexPath
     ) -> CGSize {
-        let width : CGFloat = 0
-        let height: CGFloat = 0
-        return .init(width: width, height: height)
+		let halfPadding = DesignSystem.Guid.horizontalPadding / 2
+		let result = halfPadding + DesignSystem.Guid.horizontalPadding
+		let width : CGFloat = (collectionView.bounds.width / 2) - result
+		let height: CGFloat = 260
+		return .init(width: width, height: height)
     }
 }

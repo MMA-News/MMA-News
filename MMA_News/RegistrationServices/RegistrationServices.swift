@@ -8,7 +8,7 @@ import Router
 import FirestoreSDK
 import Resolver
 import MindboxSDK
-import AddScreen
+import RoboKassaSDK
 
 extension Resolver: ResolverRegistering {
     
@@ -24,13 +24,6 @@ extension Resolver: ResolverRegistering {
         
         Resolver.register {
             FirestoreService()
-        }
-        
-        Resolver.register {
-            CreateAdvertisingScreenVCService(
-                advertisingFeature: Resolver.resolve(),
-                mindboxService: Resolver.resolve()
-            )
         }
         
         Resolver.register {
@@ -66,7 +59,11 @@ extension Resolver: ResolverRegistering {
         Resolver.register {
             WarningService()
         }
-        
+		
+		Resolver.register {
+			RoboKassaFeature()
+		}
+		
         Resolver.register {
             UserNotificationServiceDelegate(
                 handlerDidTapPushNotificationService: Resolver.resolve()
@@ -76,13 +73,6 @@ extension Resolver: ResolverRegistering {
         Resolver.register {
             UserNotificationService(
                 userNotificationServiceDelegate: Resolver.resolve()
-            )
-        }
-        
-        Resolver.register {
-            CreateAdvertisingScreenVCService(
-                advertisingFeature: Resolver.resolve(),
-                mindboxService: Resolver.resolve()
             )
         }
     }
@@ -102,15 +92,7 @@ extension Resolver: ResolverRegistering {
             HandlerDidTapPushNotificationService()
         }
         .scope(.application)
-        
-        Resolver.register {
-            AdvertisingFeature(
-                devKey: "zgnKRCbyHh8k7AcFrCzh7E",
-                appID: "6468948915"
-            )
-        }
-        .scope(.application)
-        
+      
         Resolver.register {
             SDKMindboxService(
                 endpointProduction: "T2xpbXBjb20uc3BvcnQubW1hLm5ld3M=",
@@ -143,7 +125,8 @@ extension Resolver: ResolverRegistering {
                 getRequestsFirebaseService: Resolver.resolve(),
                 routerService: Resolver.resolve(),
                 navBarFeature: Resolver.resolve(),
-                warningService: Resolver.resolve()
+				warningService: Resolver.resolve(),
+				roboKassaFeature: Resolver.resolve()
             )
         }
         .scope(.application)
@@ -161,7 +144,8 @@ extension Resolver: ResolverRegistering {
             TournamentsDetailFeature(
                 getRequestsFirebaseService: Resolver.resolve(),
                 routerService: Resolver.resolve(),
-                warningService: Resolver.resolve()
+				warningService: Resolver.resolve(),
+				roboKassaFeature: Resolver.resolve()
             )
         }
         .scope(.application)

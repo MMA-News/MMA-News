@@ -5,7 +5,8 @@
 //  Created by IOS Developer on 21.02.2023.
 //
 import Router
-import Foundation
+import UIKit
+import RoboKassaSDK
 
 final class TournamentsFeature: BaseFeatureService<TournamentsFeature> {
     
@@ -14,17 +15,20 @@ final class TournamentsFeature: BaseFeatureService<TournamentsFeature> {
     private let routerService: RouterService
     private let navBarFeature: NavBarFeature
     private let warningService: WarningService
+	private let roboKassaFeature: RoboKassaFeature
     
     init(
         getRequestsFirebaseService: GetRequestsFirebaseService,
         routerService: RouterService,
         navBarFeature: NavBarFeature,
-        warningService: WarningService
+        warningService: WarningService,
+		roboKassaFeature: RoboKassaFeature
     ) {
         self.getRequestsFirebaseService = getRequestsFirebaseService
         self.routerService = routerService
         self.navBarFeature = navBarFeature
         self.warningService = warningService
+		self.roboKassaFeature = roboKassaFeature
     }
     
     // MARK: - public properties
@@ -67,9 +71,23 @@ final class TournamentsFeature: BaseFeatureService<TournamentsFeature> {
     }
     
     func didTapBuyTicket(with indexPath: IndexPath) {
-        warningService.present(
-            with: .custom("Покупка билета невозможна".H316(color: .white)),
-            dismiss: true
-        )
+		if true {
+			let roboKassaVC = roboKassaFeature.run(with: "200", isTest: false)
+			presentRoboKassaPayment(with: roboKassaVC)
+		} else {
+			warningService.present(
+				with: .custom("Покупка билета невозможна".H316(color: .white)),
+				dismiss: true
+			)
+		}
     }
+	
+	private func presentRoboKassaPayment(with viewController: UIViewController){
+		self.routerService.present(
+			with: .viewController(viewController),
+			animation: true,
+			transitionStyle: .coverVertical,
+			presentationStyle: .formSheet
+		)
+	}
 }

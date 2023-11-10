@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,8 +12,6 @@
 		3473872E2A8CC90300C805D4 /* MindboxNotificationsService in Frameworks */ = {isa = PBXBuildFile; productRef = 3473872D2A8CC90300C805D4 /* MindboxNotificationsService */; };
 		347387302A8CC90C00C805D4 /* MindboxNotificationsContent in Frameworks */ = {isa = PBXBuildFile; productRef = 3473872F2A8CC90C00C805D4 /* MindboxNotificationsContent */; };
 		6B0F88822AE2209E006ED5F8 /* MindboxSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 6B0F88812AE2209E006ED5F8 /* MindboxSDK */; };
-		6B0F88852AE22378006ED5F8 /* AddScreen in Frameworks */ = {isa = PBXBuildFile; productRef = 6B0F88842AE22378006ED5F8 /* AddScreen */; };
-		6B0F88872AE3895E006ED5F8 /* CreateAdvertisingScreenVCService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0F88862AE3895E006ED5F8 /* CreateAdvertisingScreenVCService.swift */; };
 		6B8CF31E2ADD2E92006EC2E9 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B8CF31D2ADD2E92006EC2E9 /* WebKit.framework */; };
 		6BB5F9A22AD69D7A0066FE75 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6BB5F9A12AD69D7A0066FE75 /* GoogleService-Info.plist */; };
 		8201D014299BCB37000D6821 /* TournamentsCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8201D013299BCB37000D6821 /* TournamentsCollectionCell.xib */; };
@@ -50,6 +48,18 @@
 		822CF82629B357AD0043878D /* CalculateTimeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822CF82529B357AD0043878D /* CalculateTimeService.swift */; };
 		822CF82829B35DB50043878D /* Extension + Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822CF82729B35DB50043878D /* Extension + Date.swift */; };
 		822CF82A29B367510043878D /* Extension + UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 822CF82929B367510043878D /* Extension + UIImage.swift */; };
+		823426DC2AFBD60600B4A542 /* TicketFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823426DB2AFBD60600B4A542 /* TicketFeature.swift */; };
+		823426E22AFBD65A00B4A542 /* TicketCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 823426DE2AFBD65A00B4A542 /* TicketCollectionCell.xib */; };
+		823426E32AFBD65A00B4A542 /* TicketCollectionCellBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823426DF2AFBD65A00B4A542 /* TicketCollectionCellBuilder.swift */; };
+		823426E42AFBD65A00B4A542 /* TicketCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823426E02AFBD65A00B4A542 /* TicketCollectionCell.swift */; };
+		823426E52AFBD65A00B4A542 /* TicketCollectionCellViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823426E12AFBD65A00B4A542 /* TicketCollectionCellViewManager.swift */; };
+		823426EE2AFD483000B4A542 /* DECTicket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823426ED2AFD483000B4A542 /* DECTicket.swift */; };
+		823426F42AFD49BC00B4A542 /* TicketViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823426F02AFD49BC00B4A542 /* TicketViewBuilder.swift */; };
+		823426F52AFD49BC00B4A542 /* TicketViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823426F12AFD49BC00B4A542 /* TicketViewManager.swift */; };
+		823426F62AFD49BC00B4A542 /* TicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823426F22AFD49BC00B4A542 /* TicketView.swift */; };
+		823426F72AFD49BC00B4A542 /* TicketView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 823426F32AFD49BC00B4A542 /* TicketView.xib */; };
+		823426F92AFD4C4700B4A542 /* BannerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823426F82AFD4C4700B4A542 /* BannerService.swift */; };
+		823426FB2AFD4CD200B4A542 /* Extension + UIWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823426FA2AFD4CD200B4A542 /* Extension + UIWindow.swift */; };
 		823B4A69298E51270017A3EB /* Extension + UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823B4A68298E51270017A3EB /* Extension + UIViewController.swift */; };
 		823B4A6B298E526F0017A3EB /* TabBar.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 823B4A6A298E526F0017A3EB /* TabBar.xcassets */; };
 		823B4A6E298E570F0017A3EB /* TabBarFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823B4A6D298E570F0017A3EB /* TabBarFeature.swift */; };
@@ -139,6 +149,17 @@
 		825815B429B34E7800C125D9 /* ActionButtonViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825815B029B34E7800C125D9 /* ActionButtonViewBuilder.swift */; };
 		825815B529B34E7800C125D9 /* ActionButtonViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825815B129B34E7800C125D9 /* ActionButtonViewManager.swift */; };
 		825815B629B34E7800C125D9 /* ActionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825815B229B34E7800C125D9 /* ActionButtonView.swift */; };
+		826D279B2AF5017300A016B7 /* RoboKassaSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 826D279A2AF5017300A016B7 /* RoboKassaSDK */; };
+		8270DD682AFB991100749853 /* TicketVCBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8270DD642AFB991100749853 /* TicketVCBuilder.swift */; };
+		8270DD692AFB991100749853 /* TicketVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8270DD652AFB991100749853 /* TicketVC.xib */; };
+		8270DD6A2AFB991100749853 /* TicketVCManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8270DD662AFB991100749853 /* TicketVCManager.swift */; };
+		8270DD6B2AFB991100749853 /* TicketVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8270DD672AFB991100749853 /* TicketVC.swift */; };
+		8270DD732AFB993100749853 /* TicketCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8270DD6D2AFB993100749853 /* TicketCollectionView.swift */; };
+		8270DD742AFB993100749853 /* TicketCollectionDataSources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8270DD6E2AFB993100749853 /* TicketCollectionDataSources.swift */; };
+		8270DD752AFB993100749853 /* TicketCollectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8270DD6F2AFB993100749853 /* TicketCollectionDelegate.swift */; };
+		8270DD762AFB993100749853 /* TicketCollectionViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8270DD702AFB993100749853 /* TicketCollectionViewManager.swift */; };
+		8270DD772AFB993100749853 /* TicketCollectionViewBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8270DD712AFB993100749853 /* TicketCollectionViewBuilder.swift */; };
+		8270DD782AFB993100749853 /* TicketCollectionLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8270DD722AFB993100749853 /* TicketCollectionLayout.swift */; };
 		82710C8D29B4C23F00906870 /* FightPairsCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82710C8C29B4C23E00906870 /* FightPairsCollectionCell.xib */; };
 		82710C9629B4D0C700906870 /* YouTubeScreenViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82710C9229B4D0C700906870 /* YouTubeScreenViewManager.swift */; };
 		82710C9829B4D0C700906870 /* YouTubeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82710C9429B4D0C700906870 /* YouTubeScreenViewController.swift */; };
@@ -172,6 +193,7 @@
 		8272F033298E6A8400CC879D /* WebContentScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8272F02F298E6A8400CC879D /* WebContentScreenViewController.xib */; };
 		8272F034298E6A8400CC879D /* WebContentScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8272F030298E6A8400CC879D /* WebContentScreenViewController.swift */; };
 		8272F035298E6A8400CC879D /* WebContentScreenBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8272F031298E6A8400CC879D /* WebContentScreenBuilder.swift */; };
+		8277DC2D2AFA6C54007F0416 /* Architecture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8277DC2C2AFA6C54007F0416 /* Architecture.swift */; };
 		8281047A29B8B31500591A67 /* NewsPreviewCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8281047629B8B31500591A67 /* NewsPreviewCollectionCell.xib */; };
 		8281047B29B8B31500591A67 /* NewsPreviewCollectionCellBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8281047729B8B31500591A67 /* NewsPreviewCollectionCellBuilder.swift */; };
 		8281047C29B8B31500591A67 /* NewsPreviewCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8281047829B8B31500591A67 /* NewsPreviewCollectionCell.swift */; };
@@ -316,7 +338,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		6B0F88862AE3895E006ED5F8 /* CreateAdvertisingScreenVCService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAdvertisingScreenVCService.swift; sourceTree = "<group>"; };
 		6B8CF31D2ADD2E92006EC2E9 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		6BB5F9A12AD69D7A0066FE75 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8201D013299BCB37000D6821 /* TournamentsCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TournamentsCollectionCell.xib; sourceTree = "<group>"; };
@@ -352,6 +373,18 @@
 		822CF82529B357AD0043878D /* CalculateTimeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateTimeService.swift; sourceTree = "<group>"; };
 		822CF82729B35DB50043878D /* Extension + Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + Date.swift"; sourceTree = "<group>"; };
 		822CF82929B367510043878D /* Extension + UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UIImage.swift"; sourceTree = "<group>"; };
+		823426DB2AFBD60600B4A542 /* TicketFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketFeature.swift; sourceTree = "<group>"; };
+		823426DE2AFBD65A00B4A542 /* TicketCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TicketCollectionCell.xib; sourceTree = "<group>"; };
+		823426DF2AFBD65A00B4A542 /* TicketCollectionCellBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketCollectionCellBuilder.swift; sourceTree = "<group>"; };
+		823426E02AFBD65A00B4A542 /* TicketCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketCollectionCell.swift; sourceTree = "<group>"; };
+		823426E12AFBD65A00B4A542 /* TicketCollectionCellViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketCollectionCellViewManager.swift; sourceTree = "<group>"; };
+		823426ED2AFD483000B4A542 /* DECTicket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DECTicket.swift; sourceTree = "<group>"; };
+		823426F02AFD49BC00B4A542 /* TicketViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketViewBuilder.swift; sourceTree = "<group>"; };
+		823426F12AFD49BC00B4A542 /* TicketViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketViewManager.swift; sourceTree = "<group>"; };
+		823426F22AFD49BC00B4A542 /* TicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketView.swift; sourceTree = "<group>"; };
+		823426F32AFD49BC00B4A542 /* TicketView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TicketView.xib; sourceTree = "<group>"; };
+		823426F82AFD4C4700B4A542 /* BannerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerService.swift; sourceTree = "<group>"; };
+		823426FA2AFD4CD200B4A542 /* Extension + UIWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UIWindow.swift"; sourceTree = "<group>"; };
 		823B4A68298E51270017A3EB /* Extension + UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UIViewController.swift"; sourceTree = "<group>"; };
 		823B4A6A298E526F0017A3EB /* TabBar.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = TabBar.xcassets; sourceTree = "<group>"; };
 		823B4A6D298E570F0017A3EB /* TabBarFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarFeature.swift; sourceTree = "<group>"; };
@@ -444,6 +477,16 @@
 		825815B029B34E7800C125D9 /* ActionButtonViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButtonViewBuilder.swift; sourceTree = "<group>"; };
 		825815B129B34E7800C125D9 /* ActionButtonViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButtonViewManager.swift; sourceTree = "<group>"; };
 		825815B229B34E7800C125D9 /* ActionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionButtonView.swift; sourceTree = "<group>"; };
+		8270DD642AFB991100749853 /* TicketVCBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketVCBuilder.swift; sourceTree = "<group>"; };
+		8270DD652AFB991100749853 /* TicketVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TicketVC.xib; sourceTree = "<group>"; };
+		8270DD662AFB991100749853 /* TicketVCManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketVCManager.swift; sourceTree = "<group>"; };
+		8270DD672AFB991100749853 /* TicketVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketVC.swift; sourceTree = "<group>"; };
+		8270DD6D2AFB993100749853 /* TicketCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketCollectionView.swift; sourceTree = "<group>"; };
+		8270DD6E2AFB993100749853 /* TicketCollectionDataSources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketCollectionDataSources.swift; sourceTree = "<group>"; };
+		8270DD6F2AFB993100749853 /* TicketCollectionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketCollectionDelegate.swift; sourceTree = "<group>"; };
+		8270DD702AFB993100749853 /* TicketCollectionViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketCollectionViewManager.swift; sourceTree = "<group>"; };
+		8270DD712AFB993100749853 /* TicketCollectionViewBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketCollectionViewBuilder.swift; sourceTree = "<group>"; };
+		8270DD722AFB993100749853 /* TicketCollectionLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketCollectionLayout.swift; sourceTree = "<group>"; };
 		82710C8C29B4C23E00906870 /* FightPairsCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FightPairsCollectionCell.xib; sourceTree = "<group>"; };
 		82710C9229B4D0C700906870 /* YouTubeScreenViewManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeScreenViewManager.swift; sourceTree = "<group>"; };
 		82710C9429B4D0C700906870 /* YouTubeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouTubeScreenViewController.swift; sourceTree = "<group>"; };
@@ -477,6 +520,7 @@
 		8272F02F298E6A8400CC879D /* WebContentScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WebContentScreenViewController.xib; sourceTree = "<group>"; };
 		8272F030298E6A8400CC879D /* WebContentScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebContentScreenViewController.swift; sourceTree = "<group>"; };
 		8272F031298E6A8400CC879D /* WebContentScreenBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebContentScreenBuilder.swift; sourceTree = "<group>"; };
+		8277DC2C2AFA6C54007F0416 /* Architecture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Architecture.swift; sourceTree = "<group>"; };
 		8281047629B8B31500591A67 /* NewsPreviewCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsPreviewCollectionCell.xib; sourceTree = "<group>"; };
 		8281047729B8B31500591A67 /* NewsPreviewCollectionCellBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsPreviewCollectionCellBuilder.swift; sourceTree = "<group>"; };
 		8281047829B8B31500591A67 /* NewsPreviewCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsPreviewCollectionCell.swift; sourceTree = "<group>"; };
@@ -599,10 +643,10 @@
 				8246AAE1299DDC9300F148BF /* Kingfisher in Frameworks */,
 				825442B3298A361C003579FC /* Resolver in Frameworks */,
 				6B8CF31E2ADD2E92006EC2E9 /* WebKit.framework in Frameworks */,
+				826D279B2AF5017300A016B7 /* RoboKassaSDK in Frameworks */,
 				82C6BEEF29B4D60600FC7930 /* YouTubePlayerKit in Frameworks */,
 				8272F00B298E628500CC879D /* SnapKit in Frameworks */,
 				6B0F88822AE2209E006ED5F8 /* MindboxSDK in Frameworks */,
-				6B0F88852AE22378006ED5F8 /* AddScreen in Frameworks */,
 				3473872C2A8CC8F900C805D4 /* MindboxNotificationsService in Frameworks */,
 				A54022D729D6BBA900CE3CE2 /* Router in Frameworks */,
 				82423F9D29AE3E680071A39E /* SDWebImage in Frameworks */,
@@ -825,9 +869,32 @@
 			path = CalculateTimeService;
 			sourceTree = "<group>";
 		};
+		823426DD2AFBD64C00B4A542 /* Ticket */ = {
+			isa = PBXGroup;
+			children = (
+				823426DE2AFBD65A00B4A542 /* TicketCollectionCell.xib */,
+				823426DF2AFBD65A00B4A542 /* TicketCollectionCellBuilder.swift */,
+				823426E02AFBD65A00B4A542 /* TicketCollectionCell.swift */,
+				823426E12AFBD65A00B4A542 /* TicketCollectionCellViewManager.swift */,
+			);
+			path = Ticket;
+			sourceTree = "<group>";
+		};
+		823426EF2AFD49AA00B4A542 /* Ticket */ = {
+			isa = PBXGroup;
+			children = (
+				823426F02AFD49BC00B4A542 /* TicketViewBuilder.swift */,
+				823426F12AFD49BC00B4A542 /* TicketViewManager.swift */,
+				823426F22AFD49BC00B4A542 /* TicketView.swift */,
+				823426F32AFD49BC00B4A542 /* TicketView.xib */,
+			);
+			path = Ticket;
+			sourceTree = "<group>";
+		};
 		823B4A66298E51150017A3EB /* Setup */ = {
 			isa = PBXGroup;
 			children = (
+				8277DC2B2AFA6C30007F0416 /* Architecture */,
 				8201D023299BCBE4000D6821 /* DesignSystem */,
 				823B4A67298E511A0017A3EB /* Extensions */,
 			);
@@ -846,6 +913,7 @@
 				82423FB529AE40830071A39E /* Extension + NumberFormatter.swift */,
 				822CF82929B367510043878D /* Extension + UIImage.swift */,
 				822CF82729B35DB50043878D /* Extension + Date.swift */,
+				823426FA2AFD4CD200B4A542 /* Extension + UIWindow.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -862,6 +930,7 @@
 				82B6B43929A215A30085147E /* MainFeature.swift */,
 				82AC98AF2997C46C007ED904 /* BaseFeatureService.swift */,
 				82CF61FC29BC94B1000026B8 /* TournamentsDetailFeature.swift */,
+				823426DB2AFBD60600B4A542 /* TicketFeature.swift */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -876,7 +945,7 @@
 				823B4A70298E575E0017A3EB /* TabBarControllersService.swift */,
 				82CF61F629BC6C1E000026B8 /* SkeletonService.swift */,
 				A5236AAB29D80E390006CBE1 /* Orientation.swift */,
-				6B0F88862AE3895E006ED5F8 /* CreateAdvertisingScreenVCService.swift */,
+				823426F82AFD4C4700B4A542 /* BannerService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -884,6 +953,7 @@
 		823B4A72298E5BE60017A3EB /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				8270DD632AFB98E800749853 /* Ticket */,
 				82710C8E29B4D09D00906870 /* YouTube */,
 				82423F8F29ADC4690071A39E /* TournamentDetail */,
 				82F4E753299F55C300FB6E7E /* Main */,
@@ -904,6 +974,7 @@
 		823B4A73298E5BF10017A3EB /* CollectionViews */ = {
 			isa = PBXGroup;
 			children = (
+				8270DD6C2AFB992300749853 /* Ticket */,
 				8281047E29B8B3EE00591A67 /* NewsPreview */,
 				8204C37629B494AC00096E57 /* TournamentDetail */,
 				82EDB6CF29A11BE200EC5421 /* Media */,
@@ -919,6 +990,7 @@
 		823B4A74298E5C020017A3EB /* CollectionCells */ = {
 			isa = PBXGroup;
 			children = (
+				823426DD2AFBD64C00B4A542 /* Ticket */,
 				82CF620229BCA705000026B8 /* Post */,
 				8281047229B8B29B00591A67 /* NewsPreview */,
 				8204C36A29B4925D00096E57 /* FightPairs */,
@@ -1482,6 +1554,30 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		8270DD632AFB98E800749853 /* Ticket */ = {
+			isa = PBXGroup;
+			children = (
+				8270DD642AFB991100749853 /* TicketVCBuilder.swift */,
+				8270DD652AFB991100749853 /* TicketVC.xib */,
+				8270DD662AFB991100749853 /* TicketVCManager.swift */,
+				8270DD672AFB991100749853 /* TicketVC.swift */,
+			);
+			path = Ticket;
+			sourceTree = "<group>";
+		};
+		8270DD6C2AFB992300749853 /* Ticket */ = {
+			isa = PBXGroup;
+			children = (
+				8270DD6D2AFB993100749853 /* TicketCollectionView.swift */,
+				8270DD6E2AFB993100749853 /* TicketCollectionDataSources.swift */,
+				8270DD6F2AFB993100749853 /* TicketCollectionDelegate.swift */,
+				8270DD702AFB993100749853 /* TicketCollectionViewManager.swift */,
+				8270DD712AFB993100749853 /* TicketCollectionViewBuilder.swift */,
+				8270DD722AFB993100749853 /* TicketCollectionLayout.swift */,
+			);
+			path = Ticket;
+			sourceTree = "<group>";
+		};
 		82710C8E29B4D09D00906870 /* YouTube */ = {
 			isa = PBXGroup;
 			children = (
@@ -1698,6 +1794,14 @@
 			path = ViewManager;
 			sourceTree = "<group>";
 		};
+		8277DC2B2AFA6C30007F0416 /* Architecture */ = {
+			isa = PBXGroup;
+			children = (
+				8277DC2C2AFA6C54007F0416 /* Architecture.swift */,
+			);
+			path = Architecture;
+			sourceTree = "<group>";
+		};
 		8281047229B8B29B00591A67 /* NewsPreview */ = {
 			isa = PBXGroup;
 			children = (
@@ -1814,6 +1918,7 @@
 				8246AADD299DDA5E00F148BF /* DECNew.swift */,
 				82D19FF529A20E2E00B138CA /* DECMedia.swift */,
 				82D19FF729A20EA700B138CA /* DECTournament.swift */,
+				823426ED2AFD483000B4A542 /* DECTicket.swift */,
 				82CF61F829BC73B0000026B8 /* DECPair.swift */,
 			);
 			path = RequestModels;
@@ -1996,6 +2101,7 @@
 		82AC98942997AF28007ED904 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				823426EF2AFD49AA00B4A542 /* Ticket */,
 				8281049029B8DE3E00591A67 /* WarningView */,
 				825815AC29B34E5000C125D9 /* ActionButtonView */,
 				824D858129A1033A00E594B0 /* ProgressView */,
@@ -2424,7 +2530,7 @@
 				347387292A8CC8F900C805D4 /* MindboxNotificationsContent */,
 				3473872B2A8CC8F900C805D4 /* MindboxNotificationsService */,
 				6B0F88812AE2209E006ED5F8 /* MindboxSDK */,
-				6B0F88842AE22378006ED5F8 /* AddScreen */,
+				826D279A2AF5017300A016B7 /* RoboKassaSDK */,
 			);
 			productName = MMA_News;
 			productReference = 82544292298A3178003579FC /* MMA_News.app */;
@@ -2515,7 +2621,7 @@
 				A54022D529D6BBA900CE3CE2 /* XCRemoteSwiftPackageReference "Router" */,
 				347387282A8CC8F900C805D4 /* XCRemoteSwiftPackageReference "ios-sdk" */,
 				6B0F88802AE2209E006ED5F8 /* XCRemoteSwiftPackageReference "MindboxSDK" */,
-				6B0F88832AE22378006ED5F8 /* XCRemoteSwiftPackageReference "AddScreen" */,
+				826D27992AF5017300A016B7 /* XCLocalSwiftPackageReference "../Frameworks/RoboKassaSDK" */,
 			);
 			productRefGroup = 82544293298A3178003579FC /* Products */;
 			projectDirPath = "";
@@ -2546,6 +2652,7 @@
 				82BBBDED298B6F7400360E8A /* FightersScreenViewController.xib in Resources */,
 				82BBBDF9298B6FDA00360E8A /* NewsScreenViewController.xib in Resources */,
 				824D857229A0E2CE00E594B0 /* Roboto-Medium.ttf in Resources */,
+				823426E22AFBD65A00B4A542 /* TicketCollectionCell.xib in Resources */,
 				82AC989C2997AF5E007ED904 /* NavBarView.xib in Resources */,
 				824D857629A0E2CE00E594B0 /* Roboto-ThinItalic.ttf in Resources */,
 				8272F01B298E679700CC879D /* HomeCollectionView.xib in Resources */,
@@ -2569,6 +2676,7 @@
 				824D857929A0E2CE00E594B0 /* Roboto-Italic.ttf in Resources */,
 				8201D02C299BD664000D6821 /* Fighter.xcassets in Resources */,
 				82573297299F5A8500C05465 /* MainCollectionView.xib in Resources */,
+				8270DD692AFB991100749853 /* TicketVC.xib in Resources */,
 				8272EFF7298E5EF100CC879D /* NewsCollectionCell.xib in Resources */,
 				82EDB6CE29A11B7800EC5421 /* Media.xcassets in Resources */,
 				824D856229A0DBF100E594B0 /* ImageTitleView.xib in Resources */,
@@ -2593,6 +2701,7 @@
 				8272F002298E5F1300CC879D /* NewsCollectionView.xib in Resources */,
 				8281049D29B8DEBA00591A67 /* WarningView.xib in Resources */,
 				824D857529A0E2CE00E594B0 /* Roboto-MediumItalic.ttf in Resources */,
+				823426F72AFD49BC00B4A542 /* TicketView.xib in Resources */,
 				8201D014299BCB37000D6821 /* TournamentsCollectionCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2621,7 +2730,9 @@
 				82EDB6DF29A11BF900EC5421 /* MediaCollectionViewBuilder.swift in Sources */,
 				82423FB429AE406C0071A39E /* Extension + Decimal.swift in Sources */,
 				82423FAC29AE401F0071A39E /* Extension + TypeLink.swift in Sources */,
+				823426FB2AFD4CD200B4A542 /* Extension + UIWindow.swift in Sources */,
 				8201D025299BCC22000D6821 /* DesignSystem.swift in Sources */,
+				8270DD772AFB993100749853 /* TicketCollectionViewBuilder.swift in Sources */,
 				824D858A29A1057500E594B0 /* ProgressViewManager.swift in Sources */,
 				82BBBDDB298B6C6400360E8A /* LoadingScreenViewManager.swift in Sources */,
 				8299DF072998D630009A497A /* GetRequestsFirebaseService.swift in Sources */,
@@ -2636,6 +2747,7 @@
 				82AC98992997AF5E007ED904 /* NavBarViewBuilder.swift in Sources */,
 				82423FAD29AE401F0071A39E /* Extension + StringEncode.swift in Sources */,
 				82A1396529A10B41000C7748 /* HeaderMainCollectionCellBuilder.swift in Sources */,
+				8270DD742AFB993100749853 /* TicketCollectionDataSources.swift in Sources */,
 				8246AAE5299DFDBA00F148BF /* NewsFeature.swift in Sources */,
 				82710C9829B4D0C700906870 /* YouTubeScreenViewController.swift in Sources */,
 				82D19FF629A20E2E00B138CA /* DECMedia.swift in Sources */,
@@ -2646,18 +2758,22 @@
 				82F4E75D299F55E400FB6E7E /* MainScreenViewController.swift in Sources */,
 				8272F008298E5F1300CC879D /* NewsCollectionLayout.swift in Sources */,
 				8281048F29B8B45800591A67 /* NewsPreviewCollectionLayout.swift in Sources */,
+				823426E52AFBD65A00B4A542 /* TicketCollectionCellViewManager.swift in Sources */,
 				8272F035298E6A8400CC879D /* WebContentScreenBuilder.swift in Sources */,
 				82BBBDEF298B6F7400360E8A /* FightersScreenBuilder.swift in Sources */,
 				8272F027298E67CC00CC879D /* HomeCollectionCellBuilder.swift in Sources */,
 				8272F034298E6A8400CC879D /* WebContentScreenViewController.swift in Sources */,
 				82710C9629B4D0C700906870 /* YouTubeScreenViewManager.swift in Sources */,
 				82F4E75B299F55E400FB6E7E /* MainScreenViewManager.swift in Sources */,
+				823426F92AFD4C4700B4A542 /* BannerService.swift in Sources */,
 				82AC989B2997AF5E007ED904 /* NavBarView.swift in Sources */,
+				8270DD782AFB993100749853 /* TicketCollectionLayout.swift in Sources */,
 				82CF61F929BC73B0000026B8 /* DECPair.swift in Sources */,
 				823B4A95298E5D7D0017A3EB /* FightersCollectionCell.swift in Sources */,
 				8281047D29B8B31500591A67 /* NewsPreviewCollectionCellViewManager.swift in Sources */,
 				82D19FFA29A20F2600B138CA /* GetMediaRequestData.swift in Sources */,
 				82A1396729A10B41000C7748 /* HeaderMainCollectionCellViewManager.swift in Sources */,
+				823426DC2AFBD60600B4A542 /* TicketFeature.swift in Sources */,
 				82544296298A3178003579FC /* AppDelegate.swift in Sources */,
 				8257329C299F5A8500C05465 /* MainCollectionViewBuilder.swift in Sources */,
 				8204C38229B4974C00096E57 /* TournamentDetailCollectionView.swift in Sources */,
@@ -2673,12 +2789,15 @@
 				8204C38E29B4BFBD00096E57 /* FightPairsCollectionCell.swift in Sources */,
 				82EDB6DC29A11BF900EC5421 /* MediaCollectionDataSources.swift in Sources */,
 				82AC98862997991A007ED904 /* TournamentsCollectionViewBuilder.swift in Sources */,
+				823426F52AFD49BC00B4A542 /* TicketViewManager.swift in Sources */,
 				8281048D29B8B45800591A67 /* NewsPreviewCollectionViewManager.swift in Sources */,
 				82AC989229979CC0007ED904 /* MainNavBarScreenViewController.swift in Sources */,
 				8201D022299BCB68000D6821 /* FighterCollectionCellViewManager.swift in Sources */,
 				82AC98832997991A007ED904 /* TournamentsCollectionDataSources.swift in Sources */,
 				8204C38729B4974C00096E57 /* TournamentDetailCollectionLayout.swift in Sources */,
+				823426F62AFD49BC00B4A542 /* TicketView.swift in Sources */,
 				82CF620C29BCA727000026B8 /* PostCollectionCell.swift in Sources */,
+				8270DD762AFB993100749853 /* TicketCollectionViewManager.swift in Sources */,
 				82BBBDFB298B6FDA00360E8A /* NewsScreenBuilder.swift in Sources */,
 				824D858B29A1057500E594B0 /* ProgressView.swift in Sources */,
 				822CF82829B35DB50043878D /* Extension + Date.swift in Sources */,
@@ -2690,6 +2809,7 @@
 				8281048E29B8B45800591A67 /* NewsPreviewCollectionViewBuilder.swift in Sources */,
 				82423FAF29AE401F0071A39E /* Extension + StringConverter.swift in Sources */,
 				8272EFEA298E5DCF00CC879D /* Extension + UICollectionCell.swift in Sources */,
+				8270DD682AFB991100749853 /* TicketVCBuilder.swift in Sources */,
 				82EDB6DD29A11BF900EC5421 /* MediaCollectionDelegate.swift in Sources */,
 				82BBBDFA298B6FDA00360E8A /* NewsScreenViewController.swift in Sources */,
 				8272F01F298E679700CC879D /* HomeCollectionViewManager.swift in Sources */,
@@ -2697,9 +2817,12 @@
 				823B4A82298E5C810017A3EB /* FightersCollectionDataSources.swift in Sources */,
 				82F4E75E299F55E400FB6E7E /* MainScreenBuilder.swift in Sources */,
 				8281048A29B8B45800591A67 /* NewsPreviewCollectionView.swift in Sources */,
+				8270DD752AFB993100749853 /* TicketCollectionDelegate.swift in Sources */,
+				8277DC2D2AFA6C54007F0416 /* Architecture.swift in Sources */,
 				8204C38329B4974C00096E57 /* TournamentDetailCollectionDataSources.swift in Sources */,
 				82AC986629979763007ED904 /* TournamentsScreenViewController.swift in Sources */,
 				8204C38D29B4BFBD00096E57 /* FightPairsCollectionCellBuilder.swift in Sources */,
+				8270DD6A2AFB991100749853 /* TicketVCManager.swift in Sources */,
 				8201D020299BCB68000D6821 /* FighterCollectionCellBuilder.swift in Sources */,
 				8272F01E298E679700CC879D /* HomeCollectionDelegate.swift in Sources */,
 				823B4A8A298E5D3B0017A3EB /* Extension + CGFloat.swift in Sources */,
@@ -2709,12 +2832,12 @@
 				824CDD1029A502D9003ED8CC /* TournamentsFeature.swift in Sources */,
 				8256CA0F29A0DA3F00798359 /* MainNewBannerCollectionCellBuilder.swift in Sources */,
 				8281049F29B8DFE500591A67 /* WarningService.swift in Sources */,
+				8270DD6B2AFB991100749853 /* TicketVC.swift in Sources */,
 				8204C38529B4974C00096E57 /* TournamentDetailCollectionViewManager.swift in Sources */,
 				820E017129D6B36800511E51 /* Extension + StringData.swift in Sources */,
 				82EDB6CA29A11B2200EC5421 /* MediaCollectionCellBuilder.swift in Sources */,
 				824E1F63299E859800FD23F7 /* NewsDetailScreenViewController.swift in Sources */,
 				82EDB6CB29A11B2200EC5421 /* MediaCollectionCell.swift in Sources */,
-				6B0F88872AE3895E006ED5F8 /* CreateAdvertisingScreenVCService.swift in Sources */,
 				8272EFF9298E5EF100CC879D /* NewsCollectionCell.swift in Sources */,
 				82BBBDEC298B6F7400360E8A /* FightersScreenViewManager.swift in Sources */,
 				A5236AAA29D80D1F0006CBE1 /* AdvertisingRequestData.swift in Sources */,
@@ -2739,6 +2862,7 @@
 				82573299299F5A8500C05465 /* MainCollectionDataSources.swift in Sources */,
 				8204C37529B492F100096E57 /* TournamentDetailMainFightCollectionCellViewManager.swift in Sources */,
 				8299DF0A2998D739009A497A /* DECFighter.swift in Sources */,
+				823426E42AFBD65A00B4A542 /* TicketCollectionCell.swift in Sources */,
 				824FF326298B71430021A7B1 /* MainTabBarScreenViewManager.swift in Sources */,
 				8204C38629B4974C00096E57 /* TournamentDetailCollectionViewBuilder.swift in Sources */,
 				8201D019299BCB42000D6821 /* TournamentsCollectionCell.swift in Sources */,
@@ -2758,6 +2882,8 @@
 				824D858929A1057500E594B0 /* ProgressViewBuilder.swift in Sources */,
 				823B4A94298E5D7D0017A3EB /* FightersCollectionCellBuilder.swift in Sources */,
 				8204C38F29B4BFBD00096E57 /* FightPairsCollectionCellViewManager.swift in Sources */,
+				823426E32AFBD65A00B4A542 /* TicketCollectionCellBuilder.swift in Sources */,
+				823426F42AFD49BC00B4A542 /* TicketViewBuilder.swift in Sources */,
 				8272F028298E67CC00CC879D /* HomeCollectionCell.swift in Sources */,
 				825732A8299F5AE400C05465 /* MainCollectionCell.swift in Sources */,
 				8281047B29B8B31500591A67 /* NewsPreviewCollectionCellBuilder.swift in Sources */,
@@ -2771,6 +2897,7 @@
 				8257329B299F5A8500C05465 /* MainCollectionViewManager.swift in Sources */,
 				822CF82A29B367510043878D /* Extension + UIImage.swift in Sources */,
 				82CF61FF29BC9555000026B8 /* DECPairOfFighter.swift in Sources */,
+				823426EE2AFD483000B4A542 /* DECTicket.swift in Sources */,
 				82CF620129BC95C1000026B8 /* GetPairOfFightersRequestData.swift in Sources */,
 				82CF61F729BC6C1E000026B8 /* SkeletonService.swift in Sources */,
 				823B4A84298E5C810017A3EB /* FightersCollectionViewManager.swift in Sources */,
@@ -2786,6 +2913,7 @@
 				824E1F61299E859800FD23F7 /* NewsDetailScreenViewManager.swift in Sources */,
 				8246AADE299DDA5E00F148BF /* DECNew.swift in Sources */,
 				825815B429B34E7800C125D9 /* ActionButtonViewBuilder.swift in Sources */,
+				8270DD732AFB993100749853 /* TicketCollectionView.swift in Sources */,
 				8299DF052998D5E4009A497A /* FightersFeature.swift in Sources */,
 				82710C9929B4D0C700906870 /* YouTubeScreenBuilder.swift in Sources */,
 				8256CA1D29A0DBC900798359 /* ImageTitleViewBuilder.swift in Sources */,
@@ -3207,6 +3335,13 @@
 		};
 /* End XCConfigurationList section */
 
+/* Begin XCLocalSwiftPackageReference section */
+		826D27992AF5017300A016B7 /* XCLocalSwiftPackageReference "../Frameworks/RoboKassaSDK" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../Frameworks/RoboKassaSDK;
+		};
+/* End XCLocalSwiftPackageReference section */
+
 /* Begin XCRemoteSwiftPackageReference section */
 		347387282A8CC8F900C805D4 /* XCRemoteSwiftPackageReference "ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
@@ -3219,14 +3354,6 @@
 		6B0F88802AE2209E006ED5F8 /* XCRemoteSwiftPackageReference "MindboxSDK" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/MindboxSDK/MindboxSDK";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
-		6B0F88832AE22378006ED5F8 /* XCRemoteSwiftPackageReference "AddScreen" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/AddScreen/AddScreen";
 			requirement = {
 				branch = master;
 				kind = branch;
@@ -3316,11 +3443,6 @@
 			package = 6B0F88802AE2209E006ED5F8 /* XCRemoteSwiftPackageReference "MindboxSDK" */;
 			productName = MindboxSDK;
 		};
-		6B0F88842AE22378006ED5F8 /* AddScreen */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 6B0F88832AE22378006ED5F8 /* XCRemoteSwiftPackageReference "AddScreen" */;
-			productName = AddScreen;
-		};
 		822CF82229B356910043878D /* SkeletonView */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 822CF82129B356910043878D /* XCRemoteSwiftPackageReference "SkeletonView" */;
@@ -3340,6 +3462,10 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 825442B1298A361C003579FC /* XCRemoteSwiftPackageReference "Resolver" */;
 			productName = Resolver;
+		};
+		826D279A2AF5017300A016B7 /* RoboKassaSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RoboKassaSDK;
 		};
 		8272F00A298E628500CC879D /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;

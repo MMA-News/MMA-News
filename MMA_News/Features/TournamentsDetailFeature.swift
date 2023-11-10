@@ -6,7 +6,8 @@
 //
 import Router
 import FirestoreSDK
-import Foundation
+import UIKit
+import RoboKassaSDK
 
 final class TournamentsDetailFeature: BaseFeatureService<TournamentsDetailFeature> {
     
@@ -14,15 +15,18 @@ final class TournamentsDetailFeature: BaseFeatureService<TournamentsDetailFeatur
     private let getRequestsFirebaseService: GetRequestsFirebaseService
     private let routerService: RouterService
     private let warningService: WarningService
+	private let roboKassaFeature: RoboKassaFeature
     
     init(
         getRequestsFirebaseService: GetRequestsFirebaseService,
         routerService: RouterService,
-        warningService: WarningService
+        warningService: WarningService,
+		roboKassaFeature: RoboKassaFeature
     ) {
         self.getRequestsFirebaseService = getRequestsFirebaseService
         self.routerService = routerService
         self.warningService = warningService
+		self.roboKassaFeature = roboKassaFeature
     }
     
     // MARK: - public methods
@@ -42,9 +46,23 @@ final class TournamentsDetailFeature: BaseFeatureService<TournamentsDetailFeatur
     }
     
     func didTapBuyTicket() {
-        warningService.present(
-            with: .custom("Покупка билета невозможна".H316(color: .white)),
-            dismiss: true
-        )
+		if true {
+			let roboKassaVC = roboKassaFeature.run(with: "200", isTest: false)
+			presentRoboKassaPayment(with: roboKassaVC)
+		} else {
+			warningService.present(
+				with: .custom("Покупка билета невозможна".H316(color: .white)),
+				dismiss: true
+			)
+		}
     }
+	
+	private func presentRoboKassaPayment(with viewController: UIViewController){
+		self.routerService.present(
+			with: .viewController(viewController),
+			animation: true,
+			transitionStyle: .coverVertical,
+			presentationStyle: .formSheet
+		)
+	}
 }

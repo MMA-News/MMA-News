@@ -9,7 +9,7 @@ import UIKit
 
 struct TabBarControllersService {
     
-    private let currentTabs: [Tabs] = [.main, .news, .fighters, .tournaments]
+	private let currentTabs: [Tabs] = [.main, .news, .fighters, .tournaments, .ticket]
     
     func createViewControllers() -> [UIViewController]{
         let viewControllers: [UIViewController] = currentTabs.map({
@@ -18,15 +18,15 @@ struct TabBarControllersService {
         return viewControllers
     }
 }
-
-private extension TabBarControllersService {
+ 
+extension TabBarControllersService {
     
      enum Tabs: String, CaseIterable {
         case main
         case news
         case fighters
         case tournaments
-        case home
+		case ticket
         
         func create() -> UIViewController {
             switch self {
@@ -59,12 +59,8 @@ private extension TabBarControllersService {
                     tournamentsScreenBuilder.view.setTabBarTitle(with: self.title())
                     return tournamentsScreenBuilder.view
                     
-                case .home:
-                    let homeScreenBuilder = HomeScreenViewControllerBuilder.build()
-                    homeScreenBuilder.viewManager.state = .createViewProperties
-                    homeScreenBuilder.view.setTabBarImage(with: self.image())
-                    homeScreenBuilder.view.setTabBarTitle(with: self.title())
-                    return homeScreenBuilder.view
+                case .ticket:
+					return TicketFeature().run(with: self)
             }
         }
         
@@ -72,9 +68,6 @@ private extension TabBarControllersService {
             switch self {
                 case .main:
                     return "Главный"
-                    
-                case .home:
-                    return "Дом"
                     
                 case .news:
                     return "Новости"
@@ -84,6 +77,9 @@ private extension TabBarControllersService {
                     
                 case .tournaments:
                     return "Турниры"
+					
+				case .ticket:
+					return "Билеты"
             }
         }
         

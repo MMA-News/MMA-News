@@ -22,9 +22,7 @@ final class LoadingScreenViewControllerBuilder: BuilderProtocol {
         let viewManager    = LoadingScreenViewManager(
             routerService: Resolver.resolve(),
             mindboxService: Resolver.resolve(),
-            handlerDidTapPushNotificationService: Resolver.resolve(),
-            advertisingFeature: Resolver.resolve(),
-            createAdvertisingScreenVCService: Resolver.resolve()
+            handlerDidTapPushNotificationService: Resolver.resolve()
         )
         viewController.loadViewIfNeeded()
         viewManager.bind(with: viewController)

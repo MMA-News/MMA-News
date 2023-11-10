@@ -18,15 +18,16 @@ final class TicketCollectionDataSources: NSObject {
 //MARK: - DataSource CollectionView
 extension TicketCollectionDataSources: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return self.viewProperties?.cellsCount ?? 0
+		return self.viewProperties?.tickets.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let collectionCellBuilder = <##><#Name#>CollectionCellBuilder.build(
+        let collectionCellBuilder = TicketCollectionCellBuilder.build(
             with: collectionView,
             with: indexPath
         )
-        collectionCellBuilder.viewManager.state = .createViewProperties
+		let ticket = viewProperties!.tickets[indexPath.row]
+        collectionCellBuilder.viewManager.state = .createViewProperties(ticket)
         return collectionCellBuilder.view
     }
 }

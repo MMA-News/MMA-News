@@ -15,7 +15,7 @@ final class TicketCollectionViewManager: ViewManager<TicketCollectionView> {
     
     //MARK: - Main state view manager
     enum State {
-        case createViewProperties
+        case createViewProperties(TicketCollectionView.ViewProperties)
     }
     
     public var state: State? {
@@ -25,8 +25,8 @@ final class TicketCollectionViewManager: ViewManager<TicketCollectionView> {
     private func stateManager() {
         guard let state = self.state else { return }
         switch state {
-            case .createViewProperties:
-				self.viewProperties = TicketCollectionView.ViewProperties()
+            case .createViewProperties(let viewProperties):
+				self.viewProperties = viewProperties
 				self.create?(self.viewProperties)
         }
     }

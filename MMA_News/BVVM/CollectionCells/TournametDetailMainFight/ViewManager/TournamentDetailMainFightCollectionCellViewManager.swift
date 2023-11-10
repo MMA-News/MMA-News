@@ -37,7 +37,7 @@ final class TournamentDetailMainFightCollectionCellViewManager:  ViewManager<Tou
                 self.viewProperties = TournamentDetailMainFightCollectionCell.ViewProperties(
                     addActionView: addActionView,
                     tournament: tournament,
-                    actionViewIsHide: true
+                    actionViewIsHide: false
                 )
                 create?(self.viewProperties)
         }

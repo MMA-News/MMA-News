@@ -7,11 +7,10 @@
 import FirestoreSDK
 import FirebaseFirestore
 import Foundation
-import AddScreen
 
-struct AdvertisingRequestData: RequestData {
-    
-    var collectionReference: CollectionReference?
-    var documentReference: DocumentReference?
-    var data: RequestDataModel?
-}
+//struct AdvertisingRequestData: RequestData {
+//    
+//    var collectionReference: CollectionReference?
+//    var documentReference: DocumentReference?
+//    var data: RequestDataModel?
+//}

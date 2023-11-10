@@ -11,9 +11,12 @@ final class TicketVC: UIViewController, ViewProtocol {
     
     //MARK: - Main ViewProperties
     struct ViewProperties {
-        
+		let addCollectionView: Closure<UIView>
     }
     var viewProperties: ViewProperties?
+	
+	//MARK: - Outlets
+	@IBOutlet weak private var containerCollectionView: UIView!
 	
 	init() {
 		super.init(nibName: String(describing: Self.self), bundle: nil)
@@ -39,5 +42,6 @@ final class TicketVC: UIViewController, ViewProtocol {
     
     func create(with viewProperties: ViewProperties?) {
         self.viewProperties = viewProperties
+		self.viewProperties?.addCollectionView(containerCollectionView)
     }
 }

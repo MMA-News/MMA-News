@@ -69,7 +69,7 @@ final class TournamentsCollectionCell: UICollectionViewCell, ViewProtocol {
     }
     
     private func setupButtonView(){
-        buttonView.isHidden = true
+        buttonView.isHidden = false
     }
     
     private func setup(){

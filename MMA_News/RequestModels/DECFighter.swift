@@ -30,6 +30,6 @@ extension DECFighter: Codable {
         self.city = (try? values.decode(String.self, forKey: .city)) ?? "" 
         self.fights = (try? values.decode(String.self, forKey: .fights)) ?? "" 
         self.club = (try? values.decode(String.self, forKey: .club)) ?? "" 
-        self.photoURL = (try? values.decode(String.self, forKey: .photoURL)) ?? "" 
+        self.photoURL = (try? values.decode(String.self, forKey: .photoURL)) ?? ""
 	}
 }
