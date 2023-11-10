@@ -43,9 +43,9 @@ final class MediaCollectionView: UIView, ViewProtocol {
         collectionViewLayout.minimumInteritemSpacing       = 0
         collectionViewLayout.scrollDirection               = .horizontal
         self.collectionView.showsHorizontalScrollIndicator = false
-        self.collectionView.collectionViewLayout           = collectionViewLayout
         self.collectionView.delegate                       = self.collectionDelegate
         self.collectionView.dataSource                     = self.collectionDataSources
         self.collectionView.reloadData()
+        self.collectionView.collectionViewLayout           = collectionViewLayout
     }
 }
