@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 56;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -2627,7 +2627,7 @@
 				A54022D529D6BBA900CE3CE2 /* XCRemoteSwiftPackageReference "Router" */,
 				347387282A8CC8F900C805D4 /* XCRemoteSwiftPackageReference "ios-sdk" */,
 				6B0F88802AE2209E006ED5F8 /* XCRemoteSwiftPackageReference "MindboxSDK" */,
-				826D27992AF5017300A016B7 /* XCLocalSwiftPackageReference "../Frameworks/RoboKassaSDK" */,
+				82D9ED182AFF31D20036BF43 /* XCRemoteSwiftPackageReference "RobokassaSDK" */,
 			);
 			productRefGroup = 82544293298A3178003579FC /* Products */;
 			projectDirPath = "";
@@ -3343,13 +3343,6 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCLocalSwiftPackageReference section */
-		826D27992AF5017300A016B7 /* XCLocalSwiftPackageReference "../Frameworks/RoboKassaSDK" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = ../Frameworks/RoboKassaSDK;
-		};
-/* End XCLocalSwiftPackageReference section */
-
 /* Begin XCRemoteSwiftPackageReference section */
 		347387282A8CC8F900C805D4 /* XCRemoteSwiftPackageReference "ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
@@ -3413,6 +3406,14 @@
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 1.0.0;
+			};
+		};
+		82D9ED182AFF31D20036BF43 /* XCRemoteSwiftPackageReference "RobokassaSDK" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RobokassaSDK/RobokassaSDK";
+			requirement = {
+				branch = master;
+				kind = branch;
 			};
 		};
 		A54022D529D6BBA900CE3CE2 /* XCRemoteSwiftPackageReference "Router" */ = {

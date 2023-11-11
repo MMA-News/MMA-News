@@ -50,8 +50,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/google/GoogleUtilities.git",
       "state" : {
-        "revision" : "f6532c8d65f8308cfdf2288cbe1971a509822680",
-        "version" : "7.12.0"
+        "revision" : "bc27fad73504f3d4af235de451f02ee22586ebd3",
+        "version" : "7.12.1"
       }
     },
     {
@@ -142,6 +142,15 @@
       "state" : {
         "revision" : "97de0b0320036607564af4a60025b48f8d041221",
         "version" : "1.5.0"
+      }
+    },
+    {
+      "identity" : "robokassasdk",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/RobokassaSDK/RobokassaSDK",
+      "state" : {
+        "branch" : "master",
+        "revision" : "f54d6e995fac3189bff65da8d8f2c300c85b07d9"
       }
     },
     {

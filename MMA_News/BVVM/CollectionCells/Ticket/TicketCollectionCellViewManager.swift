@@ -2,7 +2,7 @@
 //  TicketCollectionCellViewManager.swift
 //  MMA_News
 //
-//  Created by Senior Developer on 08.11.2023.
+//  Created by IOS Developer on 08.11.2023.
 //
 import Foundation
 import Architecture

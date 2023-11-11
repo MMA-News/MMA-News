@@ -2,7 +2,7 @@
 //  PostTicketRequestData.swift
 //  MMA_News
 //
-//  Created by Senior Developer on 10.11.2023.
+//  Created by IOS Developer on 10.11.2023.
 //
 
 import FirestoreSDK
