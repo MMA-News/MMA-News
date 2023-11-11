@@ -22,6 +22,7 @@ final class TicketCollectionCell: UICollectionViewCell, ViewProtocol {
 	@IBOutlet weak private var dateLabel     : UILabel!
 	@IBOutlet weak private var timeLabel     : UILabel!
 	@IBOutlet weak private var buttonView    : UIView!
+	@IBOutlet weak private var qrCodeButton  : UIButton!
 	
 	override func layoutSubviews() {
 		super.layoutSubviews()
@@ -44,7 +45,7 @@ final class TicketCollectionCell: UICollectionViewCell, ViewProtocol {
 		self.viewProperties = viewProperties
 		setData()
 		setPhoto()
-		setupButtonView()
+		setupButtonView(with: viewProperties)
 	}
 	
 	private func setData(){
@@ -67,8 +68,10 @@ final class TicketCollectionCell: UICollectionViewCell, ViewProtocol {
 		}
 	}
 	
-	private func setupButtonView(){
-		buttonView.isHidden = false
+	private func setupButtonView(with viewProperties: ViewProperties?){
+		let text = (viewProperties?.ticket.isPayment == true) ? "Показать QR-код" : "Не оплачен"
+		self.qrCodeButton.setTitle(text, for: .normal)
+		self.qrCodeButton.isEnabled = (viewProperties?.ticket.isPayment == true)
 	}
 	
 	private func setup(){

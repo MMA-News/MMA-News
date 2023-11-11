@@ -16,7 +16,7 @@ struct DECTicket {
 	let city: String?
 	let title: String
 	let qrUrl: String
-	let pairs: [DECPair]?
+	let isPayment: Bool
 	
 	enum CodingKeys: String, CodingKey {
 		case date
@@ -25,8 +25,8 @@ struct DECTicket {
 		case city
 		case title
 		case photoURL
-		case pairs
 		case qrUrl
+		case isPayment
 	}
 }
 extension DECTicket: Codable {
@@ -40,7 +40,7 @@ extension DECTicket: Codable {
 		self.city = (try? values.decode(String?.self, forKey: .city)) ?? ""
 		self.title = (try? values.decode(String.self, forKey: .title)) ?? ""
 		self.qrUrl = (try? values.decode(String.self, forKey: .qrUrl)) ?? ""
-		self.pairs = try? values.decode([DECPair]?.self, forKey: .pairs)
+		self.isPayment = (try? values.decode(Bool.self, forKey: .isPayment)) ?? false
 	}
 }
 

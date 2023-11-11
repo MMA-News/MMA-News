@@ -12,6 +12,7 @@ final class TicketVC: UIViewController, ViewProtocol {
     //MARK: - Main ViewProperties
     struct ViewProperties {
 		let addCollectionView: Closure<UIView>
+		let viewDidAppear: ClosureEmpty
     }
     var viewProperties: ViewProperties?
 	
@@ -30,10 +31,10 @@ final class TicketVC: UIViewController, ViewProtocol {
     
     
     //MARK: - LifeCycle
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-    }
+	override func viewDidAppear(_ animated: Bool) {
+		super.viewDidAppear(animated)
+		self.viewProperties?.viewDidAppear()
+	}
     
 	//MARK: - public methods
     func update(with viewProperties: ViewProperties?) {

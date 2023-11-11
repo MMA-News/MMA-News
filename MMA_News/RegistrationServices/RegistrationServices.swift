@@ -21,7 +21,11 @@ extension Resolver: ResolverRegistering {
         Resolver.register {
             TabBarControllersService()
         }
-        
+		
+		Resolver.register {
+			UserIdService()
+		}
+		
         Resolver.register {
             FirestoreService()
         }
@@ -126,7 +130,8 @@ extension Resolver: ResolverRegistering {
                 routerService: Resolver.resolve(),
                 navBarFeature: Resolver.resolve(),
 				warningService: Resolver.resolve(),
-				roboKassaFeature: Resolver.resolve()
+				roboKassaFeature: Resolver.resolve(),
+				userIdService: Resolver.resolve()
             )
         }
         .scope(.application)
@@ -145,7 +150,8 @@ extension Resolver: ResolverRegistering {
                 getRequestsFirebaseService: Resolver.resolve(),
                 routerService: Resolver.resolve(),
 				warningService: Resolver.resolve(),
-				roboKassaFeature: Resolver.resolve()
+				roboKassaFeature: Resolver.resolve(), 
+				userIdService: Resolver.resolve()
             )
         }
         .scope(.application)

@@ -16,17 +16,20 @@ final class TournamentsDetailFeature: BaseFeatureService<TournamentsDetailFeatur
     private let routerService: RouterService
     private let warningService: WarningService
 	private let roboKassaFeature: RoboKassaFeature
+	private let userIdService: UserIdService
     
     init(
         getRequestsFirebaseService: GetRequestsFirebaseService,
         routerService: RouterService,
         warningService: WarningService,
-		roboKassaFeature: RoboKassaFeature
+		roboKassaFeature: RoboKassaFeature,
+		userIdService: UserIdService
     ) {
         self.getRequestsFirebaseService = getRequestsFirebaseService
         self.routerService = routerService
         self.warningService = warningService
 		self.roboKassaFeature = roboKassaFeature
+		self.userIdService = userIdService
     }
     
     // MARK: - public methods
@@ -45,8 +48,25 @@ final class TournamentsDetailFeature: BaseFeatureService<TournamentsDetailFeatur
             }
     }
     
-    func didTapBuyTicket() {
-		if true {
+	func didTapBuyTicket(with tournament: DECTournament) {
+		if tournament.isPayment {
+			let ticket = DECTicket(
+				date: tournament.date,
+				leftPhotoUrl: tournament.leftPhotoUrl,
+				rightPhotoUrl: tournament.rightPhotoUrl,
+				photoURL: tournament.photoURL,
+				city: tournament.city,
+				title: tournament.title,
+				qrUrl: "",
+				isPayment: false
+			)
+			let userID = self.userIdService.get()
+			getRequestsFirebaseService.postTicket(
+				ticket: ticket,
+				userID: userID,
+				completion: { ticket in
+					print(ticket)
+				})
 			let roboKassaVC = roboKassaFeature.run(with: "200", isTest: false)
 			presentRoboKassaPayment(with: roboKassaVC)
 		} else {

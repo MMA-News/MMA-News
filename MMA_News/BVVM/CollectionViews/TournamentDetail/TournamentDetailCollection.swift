@@ -65,7 +65,7 @@ enum TournamentDetailCollection {
         
         switch self {
             case .main:
-                return 310
+                return 410
                 
             case .pairs:
                 return 90

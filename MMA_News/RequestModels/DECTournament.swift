@@ -16,6 +16,7 @@ struct DECTournament {
     let post: String
     let title: String
     let pairs: [DECPair]?
+	let isPayment: Bool
     
     enum CodingKeys: String, CodingKey {
         case date
@@ -26,6 +27,7 @@ struct DECTournament {
         case post
         case photoURL
         case pairs
+		case isPayment
     }
 }
 extension DECTournament: Codable {
@@ -40,5 +42,6 @@ extension DECTournament: Codable {
         self.title = (try? values.decode(String.self, forKey: .title)) ?? ""
         self.post = (try? values.decode(String.self, forKey: .post)) ?? ""
         self.pairs = try? values.decode([DECPair]?.self, forKey: .pairs)
+		self.isPayment = (try? values.decode(Bool?.self, forKey: .isPayment)) ?? false
 	}
 }

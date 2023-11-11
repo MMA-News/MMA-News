@@ -217,6 +217,7 @@
                 <outlet property="cityLabel" destination="wwL-IP-vBE" id="HO1-pU-BbF"/>
                 <outlet property="dateLabel" destination="hMd-Nl-iim" id="hid-dX-DuO"/>
                 <outlet property="leftImageView" destination="keM-bS-G4f" id="0Go-gD-JjJ"/>
+                <outlet property="qrCodeButton" destination="UE5-bc-5hB" id="Sab-ed-iEW"/>
                 <outlet property="rightImageView" destination="f9G-kc-m05" id="gVe-AC-O7j"/>
                 <outlet property="timeLabel" destination="48R-S3-ilA" id="MHj-6j-GRz"/>
                 <outlet property="titleLabel" destination="Xs8-Vb-sHc" id="3hO-Zk-oqC"/>

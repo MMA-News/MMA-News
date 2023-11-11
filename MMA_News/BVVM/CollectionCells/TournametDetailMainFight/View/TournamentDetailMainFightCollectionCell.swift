@@ -59,18 +59,18 @@ final class TournamentDetailMainFightCollectionCell: UICollectionViewCell, ViewP
         titleTournamentsLabel.attributedText = tournament.title.H2(color: .white)
         cityTournamentsLabel.attributedText  = tournament
             .city?
-            .body14(color: .white)
+            .body10(color: .white)
         dateTournamentsLabel.attributedText  = tournament
             .date
             .convert(from: .fullData_Time,
                      to: .dayMonthYear)?
-            .body14(color: .white)
+            .body10(color: .white)
         
         timeTournamentsLabel.attributedText  = tournament
             .date
             .convert(from: .fullData_Time,
                      to: .time)?
-            .body14(color: .white)
+            .body10(color: .white)
     }
     
     private func setImageData() {
@@ -98,6 +98,6 @@ final class TournamentDetailMainFightCollectionCell: UICollectionViewCell, ViewP
     
     private func setupActionView(){
         guard let actionViewIsHide = self.viewProperties?.actionViewIsHide else { return }
-        containerActionView.isHidden = actionViewIsHide
+        containerActionView.isHidden = !actionViewIsHide
     }
 }

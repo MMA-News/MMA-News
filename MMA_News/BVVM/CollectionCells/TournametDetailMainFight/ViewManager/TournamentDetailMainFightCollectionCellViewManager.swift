@@ -37,7 +37,7 @@ final class TournamentDetailMainFightCollectionCellViewManager:  ViewManager<Tou
                 self.viewProperties = TournamentDetailMainFightCollectionCell.ViewProperties(
                     addActionView: addActionView,
                     tournament: tournament,
-                    actionViewIsHide: false
+					actionViewIsHide: tournament.isPayment
                 )
                 create?(self.viewProperties)
         }
@@ -55,7 +55,8 @@ final class TournamentDetailMainFightCollectionCellViewManager:  ViewManager<Tou
         }
         let viewProperties = ActionButtonView.ViewProperties(
             action: { [weak self] in
-                self?.tournamentsDetailFeature.didTapBuyTicket()
+				guard let tournament = self?.viewProperties?.tournament else { return }
+				self?.tournamentsDetailFeature.didTapBuyTicket(with: tournament)
             },
             title: "Купить билеты".bodySmall(color: .black))
         actionButtonViewBuilder.viewManager.state = .createViewProperties(viewProperties)

@@ -210,6 +210,9 @@
 		8281049A29B8DE6000591A67 /* WarningView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8281049629B8DE6000591A67 /* WarningView.swift */; };
 		8281049D29B8DEBA00591A67 /* WarningView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8281049C29B8DEBA00591A67 /* WarningView.xib */; };
 		8281049F29B8DFE500591A67 /* WarningService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8281049E29B8DFE500591A67 /* WarningService.swift */; };
+		828111E42AFE34F8005C5763 /* GetTicketsRequestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828111E32AFE34F8005C5763 /* GetTicketsRequestData.swift */; };
+		828111E62AFE5477005C5763 /* PostTicketRequestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828111E52AFE5477005C5763 /* PostTicketRequestData.swift */; };
+		828111E82AFE5A24005C5763 /* UserIdService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 828111E72AFE5A24005C5763 /* UserIdService.swift */; };
 		8299DF052998D5E4009A497A /* FightersFeature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8299DF042998D5E4009A497A /* FightersFeature.swift */; };
 		8299DF072998D630009A497A /* GetRequestsFirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8299DF062998D630009A497A /* GetRequestsFirebaseService.swift */; };
 		8299DF0A2998D739009A497A /* DECFighter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8299DF092998D739009A497A /* DECFighter.swift */; };
@@ -300,7 +303,6 @@
 		82F4E75D299F55E400FB6E7E /* MainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F4E759299F55E400FB6E7E /* MainScreenViewController.swift */; };
 		82F4E75E299F55E400FB6E7E /* MainScreenBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F4E75A299F55E400FB6E7E /* MainScreenBuilder.swift */; };
 		82FCC8E129BCA75E00018BC9 /* PostCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82FCC8E029BCA75E00018BC9 /* PostCollectionCell.xib */; };
-		A5236AAA29D80D1F0006CBE1 /* AdvertisingRequestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5236AA929D80D1F0006CBE1 /* AdvertisingRequestData.swift */; };
 		A5236AAC29D80E390006CBE1 /* Orientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5236AAB29D80E390006CBE1 /* Orientation.swift */; };
 		A54022D729D6BBA900CE3CE2 /* Router in Frameworks */ = {isa = PBXBuildFile; productRef = A54022D629D6BBA900CE3CE2 /* Router */; };
 /* End PBXBuildFile section */
@@ -537,6 +539,9 @@
 		8281049629B8DE6000591A67 /* WarningView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarningView.swift; sourceTree = "<group>"; };
 		8281049C29B8DEBA00591A67 /* WarningView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WarningView.xib; sourceTree = "<group>"; };
 		8281049E29B8DFE500591A67 /* WarningService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WarningService.swift; sourceTree = "<group>"; };
+		828111E32AFE34F8005C5763 /* GetTicketsRequestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTicketsRequestData.swift; sourceTree = "<group>"; };
+		828111E52AFE5477005C5763 /* PostTicketRequestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTicketRequestData.swift; sourceTree = "<group>"; };
+		828111E72AFE5A24005C5763 /* UserIdService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserIdService.swift; sourceTree = "<group>"; };
 		8299DF042998D5E4009A497A /* FightersFeature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FightersFeature.swift; sourceTree = "<group>"; };
 		8299DF062998D630009A497A /* GetRequestsFirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetRequestsFirebaseService.swift; sourceTree = "<group>"; };
 		8299DF092998D739009A497A /* DECFighter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DECFighter.swift; sourceTree = "<group>"; };
@@ -631,7 +636,6 @@
 		82F4E759299F55E400FB6E7E /* MainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenViewController.swift; sourceTree = "<group>"; };
 		82F4E75A299F55E400FB6E7E /* MainScreenBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreenBuilder.swift; sourceTree = "<group>"; };
 		82FCC8E029BCA75E00018BC9 /* PostCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PostCollectionCell.xib; sourceTree = "<group>"; };
-		A5236AA929D80D1F0006CBE1 /* AdvertisingRequestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdvertisingRequestData.swift; sourceTree = "<group>"; };
 		A5236AAB29D80E390006CBE1 /* Orientation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Orientation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -946,6 +950,7 @@
 				82CF61F629BC6C1E000026B8 /* SkeletonService.swift */,
 				A5236AAB29D80E390006CBE1 /* Orientation.swift */,
 				823426F82AFD4C4700B4A542 /* BannerService.swift */,
+				828111E72AFE5A24005C5763 /* UserIdService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -1936,12 +1941,13 @@
 		8299DF0C2998DF8B009A497A /* GetRequestsData */ = {
 			isa = PBXGroup;
 			children = (
-				A5236AA929D80D1F0006CBE1 /* AdvertisingRequestData.swift */,
 				8299DF0D2998DF9C009A497A /* GetFightersRequestData.swift */,
 				8299DF0F2998E016009A497A /* GetNewsRequestData.swift */,
 				8299DF112998E020009A497A /* GetTournamentsRequestData.swift */,
 				82D19FF929A20F2600B138CA /* GetMediaRequestData.swift */,
 				82CF620029BC95C1000026B8 /* GetPairOfFightersRequestData.swift */,
+				828111E32AFE34F8005C5763 /* GetTicketsRequestData.swift */,
+				828111E52AFE5477005C5763 /* PostTicketRequestData.swift */,
 			);
 			path = GetRequestsData;
 			sourceTree = "<group>";
@@ -2754,6 +2760,7 @@
 				82423FB629AE40830071A39E /* Extension + NumberFormatter.swift in Sources */,
 				82AC98AA2997BE83007ED904 /* FighterScreenViewController.swift in Sources */,
 				823B4A6E298E570F0017A3EB /* TabBarFeature.swift in Sources */,
+				828111E42AFE34F8005C5763 /* GetTicketsRequestData.swift in Sources */,
 				82AC98852997991A007ED904 /* TournamentsCollectionViewManager.swift in Sources */,
 				82F4E75D299F55E400FB6E7E /* MainScreenViewController.swift in Sources */,
 				8272F008298E5F1300CC879D /* NewsCollectionLayout.swift in Sources */,
@@ -2787,6 +2794,7 @@
 				8281049829B8DE6000591A67 /* WarningViewBuilder.swift in Sources */,
 				823B4A69298E51270017A3EB /* Extension + UIViewController.swift in Sources */,
 				8204C38E29B4BFBD00096E57 /* FightPairsCollectionCell.swift in Sources */,
+				828111E62AFE5477005C5763 /* PostTicketRequestData.swift in Sources */,
 				82EDB6DC29A11BF900EC5421 /* MediaCollectionDataSources.swift in Sources */,
 				82AC98862997991A007ED904 /* TournamentsCollectionViewBuilder.swift in Sources */,
 				823426F52AFD49BC00B4A542 /* TicketViewManager.swift in Sources */,
@@ -2831,6 +2839,7 @@
 				82BBBDF8298B6FDA00360E8A /* NewsScreenViewManager.swift in Sources */,
 				824CDD1029A502D9003ED8CC /* TournamentsFeature.swift in Sources */,
 				8256CA0F29A0DA3F00798359 /* MainNewBannerCollectionCellBuilder.swift in Sources */,
+				828111E82AFE5A24005C5763 /* UserIdService.swift in Sources */,
 				8281049F29B8DFE500591A67 /* WarningService.swift in Sources */,
 				8270DD6B2AFB991100749853 /* TicketVC.swift in Sources */,
 				8204C38529B4974C00096E57 /* TournamentDetailCollectionViewManager.swift in Sources */,
@@ -2840,7 +2849,6 @@
 				82EDB6CB29A11B2200EC5421 /* MediaCollectionCell.swift in Sources */,
 				8272EFF9298E5EF100CC879D /* NewsCollectionCell.swift in Sources */,
 				82BBBDEC298B6F7400360E8A /* FightersScreenViewManager.swift in Sources */,
-				A5236AAA29D80D1F0006CBE1 /* AdvertisingRequestData.swift in Sources */,
 				823B4A88298E5CDB0017A3EB /* Extension + UIView.swift in Sources */,
 				825442B9298A3BEA003579FC /* RegistrationServices.swift in Sources */,
 				82423F9729ADC4910071A39E /* TournamentDetailScreenViewManager.swift in Sources */,

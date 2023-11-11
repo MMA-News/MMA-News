@@ -45,7 +45,7 @@ final class TournamentsCollectionCell: UICollectionViewCell, ViewProtocol {
         self.viewProperties = viewProperties
         setData()
         setPhoto()
-        setupButtonView()
+		setupButtonView(with: viewProperties)
     }
     
     private func setData(){
@@ -68,8 +68,8 @@ final class TournamentsCollectionCell: UICollectionViewCell, ViewProtocol {
         }
     }
     
-    private func setupButtonView(){
-        buttonView.isHidden = false
+    private func setupButtonView(with viewProperties: ViewProperties?){
+		buttonView.isHidden = (viewProperties?.tournament.isPayment == false)
     }
     
     private func setup(){
