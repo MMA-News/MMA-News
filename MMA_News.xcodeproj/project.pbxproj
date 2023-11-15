@@ -11,7 +11,6 @@
 		3473872C2A8CC8F900C805D4 /* MindboxNotificationsService in Frameworks */ = {isa = PBXBuildFile; productRef = 3473872B2A8CC8F900C805D4 /* MindboxNotificationsService */; };
 		3473872E2A8CC90300C805D4 /* MindboxNotificationsService in Frameworks */ = {isa = PBXBuildFile; productRef = 3473872D2A8CC90300C805D4 /* MindboxNotificationsService */; };
 		347387302A8CC90C00C805D4 /* MindboxNotificationsContent in Frameworks */ = {isa = PBXBuildFile; productRef = 3473872F2A8CC90C00C805D4 /* MindboxNotificationsContent */; };
-		6B0F88822AE2209E006ED5F8 /* MindboxSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 6B0F88812AE2209E006ED5F8 /* MindboxSDK */; };
 		6B8CF31E2ADD2E92006EC2E9 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B8CF31D2ADD2E92006EC2E9 /* WebKit.framework */; };
 		6BB5F9A22AD69D7A0066FE75 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6BB5F9A12AD69D7A0066FE75 /* GoogleService-Info.plist */; };
 		8201D014299BCB37000D6821 /* TournamentsCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8201D013299BCB37000D6821 /* TournamentsCollectionCell.xib */; };
@@ -650,7 +649,6 @@
 				826D279B2AF5017300A016B7 /* RoboKassaSDK in Frameworks */,
 				82C6BEEF29B4D60600FC7930 /* YouTubePlayerKit in Frameworks */,
 				8272F00B298E628500CC879D /* SnapKit in Frameworks */,
-				6B0F88822AE2209E006ED5F8 /* MindboxSDK in Frameworks */,
 				3473872C2A8CC8F900C805D4 /* MindboxNotificationsService in Frameworks */,
 				A54022D729D6BBA900CE3CE2 /* Router in Frameworks */,
 				82423F9D29AE3E680071A39E /* SDWebImage in Frameworks */,
@@ -2535,7 +2533,6 @@
 				A54022D629D6BBA900CE3CE2 /* Router */,
 				347387292A8CC8F900C805D4 /* MindboxNotificationsContent */,
 				3473872B2A8CC8F900C805D4 /* MindboxNotificationsService */,
-				6B0F88812AE2209E006ED5F8 /* MindboxSDK */,
 				826D279A2AF5017300A016B7 /* RoboKassaSDK */,
 			);
 			productName = MMA_News;
@@ -2626,7 +2623,6 @@
 				82C6BEED29B4D60600FC7930 /* XCRemoteSwiftPackageReference "YouTubePlayerKit" */,
 				A54022D529D6BBA900CE3CE2 /* XCRemoteSwiftPackageReference "Router" */,
 				347387282A8CC8F900C805D4 /* XCRemoteSwiftPackageReference "ios-sdk" */,
-				6B0F88802AE2209E006ED5F8 /* XCRemoteSwiftPackageReference "MindboxSDK" */,
 				82D9ED182AFF31D20036BF43 /* XCRemoteSwiftPackageReference "RobokassaSDK" */,
 			);
 			productRefGroup = 82544293298A3178003579FC /* Products */;
@@ -3127,7 +3123,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MMA_News/Resources/InfoPlists/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "World MMA news";
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.sports";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.news";
 				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Allow the use of IDFA so that we can understand which user wants to see ads";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
@@ -3165,7 +3161,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MMA_News/Resources/InfoPlists/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "World MMA news";
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.sports";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.news";
 				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Allow the use of IDFA so that we can understand which user wants to see ads";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
@@ -3352,14 +3348,6 @@
 				minimumVersion = 2.0.0;
 			};
 		};
-		6B0F88802AE2209E006ED5F8 /* XCRemoteSwiftPackageReference "MindboxSDK" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/MindboxSDK/MindboxSDK";
-			requirement = {
-				branch = master;
-				kind = branch;
-			};
-		};
 		822CF82129B356910043878D /* XCRemoteSwiftPackageReference "SkeletonView" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Juanpe/SkeletonView.git";
@@ -3446,11 +3434,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 347387282A8CC8F900C805D4 /* XCRemoteSwiftPackageReference "ios-sdk" */;
 			productName = MindboxNotificationsContent;
-		};
-		6B0F88812AE2209E006ED5F8 /* MindboxSDK */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 6B0F88802AE2209E006ED5F8 /* XCRemoteSwiftPackageReference "MindboxSDK" */;
-			productName = MindboxSDK;
 		};
 		822CF82229B356910043878D /* SkeletonView */ = {
 			isa = XCSwiftPackageProductDependency;

@@ -7,7 +7,6 @@
 import Resolver
 import UIKit
 import Architecture
-import MindboxSDK
 
 final class LoadingScreenViewControllerBuilder: BuilderProtocol {
     
@@ -20,9 +19,7 @@ final class LoadingScreenViewControllerBuilder: BuilderProtocol {
     public static func build() -> LoadingScreenViewControllerBuilder {
         let viewController = LoadingScreenViewController()
         let viewManager    = LoadingScreenViewManager(
-            routerService: Resolver.resolve(),
-            mindboxService: Resolver.resolve(),
-            handlerDidTapPushNotificationService: Resolver.resolve()
+            routerService: Resolver.resolve()
         )
         viewController.loadViewIfNeeded()
         viewManager.bind(with: viewController)

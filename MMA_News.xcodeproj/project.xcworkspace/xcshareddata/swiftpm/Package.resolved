@@ -109,15 +109,6 @@
       }
     },
     {
-      "identity" : "mindboxsdk",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/MindboxSDK/MindboxSDK",
-      "state" : {
-        "branch" : "master",
-        "revision" : "c1e89d97446ae2aea97e7589985abd6157453b10"
-      }
-    },
-    {
       "identity" : "nanopb",
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/firebase/nanopb.git",

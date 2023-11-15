@@ -7,7 +7,6 @@
 import Router
 import FirestoreSDK
 import Resolver
-import MindboxSDK
 import RoboKassaSDK
 
 extension Resolver: ResolverRegistering {
@@ -67,18 +66,6 @@ extension Resolver: ResolverRegistering {
 		Resolver.register {
 			RoboKassaFeature()
 		}
-		
-        Resolver.register {
-            UserNotificationServiceDelegate(
-                handlerDidTapPushNotificationService: Resolver.resolve()
-            )
-        }
-        
-        Resolver.register {
-            UserNotificationService(
-                userNotificationServiceDelegate: Resolver.resolve()
-            )
-        }
     }
     
     private static func application() {
@@ -91,18 +78,6 @@ extension Resolver: ResolverRegistering {
             NavBarFeature()
         }
         .scope(.application)
-        
-        Resolver.register {
-            HandlerDidTapPushNotificationService()
-        }
-        .scope(.application)
-      
-        Resolver.register {
-            SDKMindboxService(
-                endpointProduction: "T2xpbXBjb20uc3BvcnQubW1hLm5ld3M=",
-                endpointDevelopment: "T2xpbXBjb20uc3BvcnQubW1hLm5ld3Mtc2FuZGJveA=="
-            )
-        }.scope(.application)
         
         Resolver.register {
             NewsFeature(

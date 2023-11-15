@@ -9,8 +9,6 @@ import Resolver
 import UIKit
 import FirestoreSDK
 import Firebase
-import MindboxSDK
-import Mindbox
 
 @main
 final class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
@@ -20,20 +18,11 @@ final class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationC
     var orientationLock = UIInterfaceOrientationMask.portrait
     
     @Injected
-    private var userNotificationService: UserNotificationService
-    @Injected
     private var routerService : RouterService
-    @Injected
-    private var mindboxService: SDKMindboxService
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
 		FirebaseApp.configure()
-        mindboxService.setup()
         setRootVC()
-        userNotificationService.setup(
-            application: application,
-            completionHandler:  { _ in }
-        )
         return true
     }
     
@@ -44,12 +33,6 @@ final class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationC
             window: &window,
             viewController: builder.view
         )
-    }
-    
-    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
-        let deviceTokenString = deviceToken.reduce("", {$0 + String(format: "%02X", $1)})
-        mindboxService.deviceToken = deviceTokenString
-        Mindbox.shared.apnsTokenUpdate(deviceToken: deviceToken)
     }
     
     func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {

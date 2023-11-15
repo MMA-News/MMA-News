@@ -7,7 +7,6 @@
 import Router
 import UIKit
 import Architecture
-import MindboxSDK
 import FirebaseFirestore
 import RoboKassaSDK
 import Combine
@@ -25,18 +24,12 @@ final class LoadingScreenViewManager: ViewManager<LoadingScreenViewController> {
     
     // MARK: - DI -
     private let routerService: RouterService
-    private let handlerDidTapPushNotificationService: HandlerDidTapPushNotificationService
-    private let mindboxService: SDKMindboxService
 	private let roboKassaFeature = RoboKassaFeature()
     
     init(
-        routerService: RouterService,
-        mindboxService: SDKMindboxService,
-        handlerDidTapPushNotificationService: HandlerDidTapPushNotificationService
+        routerService: RouterService
     ) {
         self.routerService = routerService
-        self.handlerDidTapPushNotificationService = handlerDidTapPushNotificationService
-        self.mindboxService = mindboxService
     }
     
     //MARK: - Main state view model
